@@ -23,22 +23,24 @@ The project is implemented using PyTorch, a popular deep learning framework, and
   pip install -r requirements.txt
 # Training the Model
 Place your dataset in the data/ folder with the following structure:
-``` data/
-├── train/
-│   ├── bald_eagle/
-│   ├── black_bear/
-│   ├── bobcat/
-│   └── ...
-├── val/
-│   ├── bald_eagle/
-│   ├── black_bear/
-│   ├── bobcat/
-│   └── ...
+```wildlife-species-identification/
+├── data/                  # Folder for dataset (optional, if not too large)
+├── models/                # Folder for saved models
+│   └── wildlife_best_model.pth
+├── scripts/               # Folder for scripts
+│   ├── train.py           # Training script
+│   ├── predict.py         # Prediction script
+│   ├── predict_batch.py   # Batch prediction script
+│   └── utils.py           # Utility functions
+├── requirements.txt       # List of dependencies
+├── README.md              # Project documentation
+├── .gitignore             # Files/folders to ignore in Git
+└── LICENSE                # License file
 ```
 # Run the training script
 python scripts/train.py
 # Dataset
-Get the Datsets from Kaggle or Hugging face.
+Get the Datasets from Kaggle or Hugging face.
 # Model Architecture
 The project uses a ResNet18 model pre-trained on ImageNet. The final layer is modified to output 10 classes (one for each species). The model is fine-tuned on the wildlife species dataset.
 
