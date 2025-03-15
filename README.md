@@ -16,7 +16,7 @@ The project is implemented using PyTorch, a popular deep learning framework, and
 **CSV Export**: Saves predictions along with image paths and base64-encoded images (optional).
 # Installation
 **Clone the repository**:
-  git clone https://github.com/your-username/wildlife-species-identification.git
+  git clone https://github.com/SHASHANK-SM/Wildlife_Species_Identification.git
 **Navigate to the project directory**:
   cd wildlife-species-identification
 **Install the required dependencies**:
